@@ -34,8 +34,7 @@ p {
   font-family: var(--text-font);
   color: var(--secondary-color);
   line-height: 1.6;
-  font-size: 1.1rem;;
-  margin: 20px;
+  font-size: 1rem;;
 }
 main {
   margin-left: 200px; /* Largeur du menu de navigation */
@@ -85,15 +84,43 @@ nav ul li a:hover{
 #actions{
   margin-top: 60px;;
 }
-.card{
+/* .card{
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
   height: 12em;
-  width: 40em;
   border-radius: 0.5em;
   text-align: center;
   align-content: center;
+  flex: 0 0 20em;
+} */
+ .card-list .card-item {
+  list-style: none;
+}
+.card-list .card-item .card-link{
+  width: 600px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-list .card-link .card-image{
+  width: 100%;
+  aspect-ratio: 16 /9 ;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.card-list .card-link .card-title{
+  font-family: var(--main-font);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  margin: 16px 0 18px;
+  font-size: 1.2rem;
+  background-color: #E0F0D8;
+  border-radius: 30px;
+  width: fit-content;
 }
