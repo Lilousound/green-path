@@ -1,0 +1,28 @@
+.actions-container {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card{
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.646);
+  width: 80%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.illu-actions{
+  display: flex;
+  flex-wrap: row;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.illu-actions img{
+  width: 300px;
+  max-height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
