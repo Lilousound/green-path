@@ -7,6 +7,11 @@
     <title>"GreenPath" – Association Écologique Locale</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
   </head>
   	<body>
@@ -22,40 +27,40 @@
         </header>
 
         <main>
-          <h1>Agissons ensemble pour un Paris plus vert !</h1>
-          <h2>GreenPath est une association engagée pour la transition écologique
-            en Île-de-France. Rejoignez-nous pour des actions concrètes et conviviales !</h2>
+          <div class="title">
+            <img src="./img/logo.png" alt="Logo GreenPath">
+            <div class="title-text">
+              <h1>Agissons ensemble pour un Paris plus vert!</h1><br>
+              <h2>GreenPath est une association engagée pour la transition écologique
+              en Île-de-France. Rejoignez-nous pour des actions concrètes et conviviales !</h2>
+            </div>
+          </div>
 
 
-          <section id="actions">
-            <h3>Nos Actions</h3>
 
-            <div class="carousel">
+          <section>
+            <h2  id="actions">Nos Actions:</h2>
+
+            <div class="carousel swiper">
               <div class="card-wrapper">
-                <ul class="card-list">
-                  <li class="card-item">
+                <ul class="card-list swiper-wrapper">
+                  <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                       <img src="img/atelier-diy.jpg" alt="Atelier DIY" class="card-image">
                       <h4 class="card-title">Ateliers DIY</h4>
                       <p>Apprenez à fabriquer vos produits ménagers, cosmétiques ou objets du quotidien. Réduisez vos déchets et économisez!</p>
                     </a>
                   </li>
-                </ul>
-              </div>
-              <div class="card-wrapper">
-                <ul class="card-list">
-                  <li class="card-item">
+
+                  <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                       <img src="img/collecte.jpg" alt="Atelier DIY" class="card-image">
                       <h4 class="card-title">Collectes de déchets</h4>
                       <p>Participez à nos collectes mensuelles dans les parcs parisiens. Un geste simple pour préserver notre environnement.</p>
                     </a>
                   </li>
-                </ul>
-              </div>
-              <div class="card-wrapper">
-                <ul class="card-list">
-                  <li class="card-item">
+
+                  <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                       <img src="img/conferences.jpg" alt="Atelier DIY" class="card-image">
                       <h4 class="card-title">Conférences</h4>
@@ -63,23 +68,19 @@
                     </a>
                   </li>
                 </ul>
-              </div>
-              <!-- <div class="card">
-                <p> : ""</p>
-              </div>
-              <div class="card">
-                <p> : ""</p>
-              </div>
-              <div class="card">
-                <p>Conférences : "Rencontrez des experts et échangez sur les enjeux écologiques actuels. Ouvert à tous, gratuit."</p>
-              </div> -->
 
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+              </div>
             </div>
 
           </section>
         </main>
 
-
-        <script src="./script.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
      </body>
 </html>

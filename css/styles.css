@@ -3,8 +3,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-
 }
 
 body {
@@ -18,17 +16,20 @@ body {
   --text-font: 'Gabarito', 'Arial, sans-serif';
   --primary-color: #1f3c0f;
   --secondary-color: rgb(14, 29, 17);
+  --tertiary-color: #E0F0D8;
 }
 
 html, body {
   height: 100%;
-  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--main-font);
   color: var(--primary-color);
-  margin: 20px;
+}
+h1{
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 p {
   font-family: var(--text-font);
@@ -38,7 +39,6 @@ p {
 }
 main {
   margin-left: 200px; /* Largeur du menu de navigation */
-  padding: 70px;
   height: 100vh;
   overflow-y: auto; /* Permet le défilement vertical */
   background-image: linear-gradient(rgb(238, 239, 237),rgb(243, 249, 251)), url(../img/bck_green.jpg);
@@ -82,31 +82,43 @@ nav ul li a:hover{
   text-decoration: underline;
 }
 #actions{
-  margin-top: 60px;;
+  margin: 50px 0 20px 180px;
 }
-/* .card{
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  height: 12em;
-  border-radius: 0.5em;
-  text-align: center;
-  align-content: center;
-  flex: 0 0 20em;
-} */
+.title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title img{
+  width: 400px;
+  height: auto;
+}
+.title-text{
+  max-width: 800px;
+}
+/* ! CAROUSEL STYLES */
+
+.carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.card-wrapper {
+  margin: auto;
+}
  .card-list .card-item {
   list-style: none;
 }
 .card-list .card-item .card-link{
-  width: 600px;
+  width: 700px;
+  user-select: none;
   display: block;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 18px;
   border-radius: 8px;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 0 0 10px;
 }
 .card-list .card-link .card-image{
   width: 100%;
@@ -120,7 +132,21 @@ nav ul li a:hover{
   padding: 8px 16px;
   margin: 16px 0 18px;
   font-size: 1.2rem;
-  background-color: #E0F0D8;
+  background-color: var(--tertiary-color);
   border-radius: 30px;
   width: fit-content;
+}
+.btn-swipe {
+  color: red;
+}
+.card-wrapper .swiper-pagination-bullet {
+  background-color: var(--tertiary-color);
+  opacity: 1;
+}
+.card-wrapper .swiper-pagination-bullet-active {
+  background-color: var(--secondary-color);
+}
+.card-wrapper .swiper-button-prev,
+.card-wrapper .swiper-button-next {
+  color: var(--primary-color);
 }
