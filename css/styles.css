@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;    // masque le défilement
+}
+
+:root{
+  --main-font: 'Montserrat Alternates', 'Arial, sans-serif';
+  --text-font: 'Gabarito', 'Arial, sans-serif';
+  --primary-color: #1f3c0f;
+  --secondary-color: rgb(14, 29, 17);
+}
+
+html, body {
+  height: 100%;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-font);
+  color: var(--primary-color);
+  margin: 20px;
+}
+p {
+  font-family: var(--text-font);
+  color: var(--secondary-color);
+  line-height: 1.6;
+  font-size: 1.1rem;;
+  margin: 20px;
+}
+main {
+  margin-left: 200px; /* Largeur du menu de navigation */
+  padding: 70px;
+  height: 100vh;
+  overflow-y: auto; /* Permet le défilement vertical */
+  background-image: linear-gradient(rgb(238, 239, 237),rgb(243, 249, 251)), url(../img/bck_green.jpg);
+  background-blend-mode: darken;
+  background-size: cover;/* Ajuste la taille de l’image de fond pour qu’elle couvre toute la fenêtre */
+  /* background-repeat: no-repeat;  Empêche la répétition de l’image */
+  /* background-position: center;   Centre l’image dans la fenêtre */
+  /* background-attachment: fixed;  */
+}
+body{
+  position: relative;
+  margin: 0px;
+  /* background-image: linear-gradient(rgba(13, 13, 13, 0.537),rgba(18, 29, 15, 0.813)), url(../img/pic_green.jpg); */
+
+}
+nav {
+  float: left;
+  width: 200px;
+  height: 100vh;
+  padding: 30px 0 0 40px;
+  background-color: var(--primary-color);
+  position: fixed;
+  line-height: 40px;
+  font-weight: bold;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+}
+nav ul li{
+  margin-bottom: 10px;
+  list-style-type: none;
+
+}
+nav ul li a{
+  font-family: var(--main-font);
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+}
+#actions{
+  margin-top: 60px;;
+}
+.card{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 12em;
+  width: 40em;
+  border-radius: 0.5em;
+  text-align: center;
+  align-content: center;
+}
