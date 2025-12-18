@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""GreenPath" – Association Écologique Locale">
+    <title>"GreenPath" – Association Écologique Locale</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+  </head>
+  	<body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="actions.html">Nos Actions</a></li>
+              <li><a href="evenements.html">Évènements</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+
+          <div class="event-container">
+            <h1>Nos évènements à venir:</h1>
+
+            <div class="event">
+              <div class="div event-left">
+                <div class="event-date">
+                  <div class="date">20</div>
+                  <div class="month">Décembre</div>
+                 </div>
+              </div>
+              <div class="event-content">
+                <h2 class="event-title">Atelier DIY</h2>
+                <div class="event-descr">Fabriquez vos produits ménagers et cosmétiques maison.</div>
+                <div class="event-details">
+                  <div class="event-time">
+                    <img src="./img/time.png" alt="">10:00
+                  </div>
+                  <div class="localisation" id="loc1">
+                    <img src="./img/place.png" alt="">Mairie du 15ème</div>
+                  <div class="inscription">
+                    <img src="./img/form.png" alt="">S'inscrire</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="event">
+              <div class="div event-left">
+                <div class="event-date">
+                  <div class="date">21</div>
+                  <div class="month">Décembre</div>
+                 </div>
+              </div>
+              <div class="event-content">
+                <h2 class="event-title">Collecte de déchets</h2>
+                <div class="event-descr">Nettoyons ensemble les espaces verts de Paris.</div>
+                <div class="event-details">
+                  <div class="event-time">
+                    <img src="./img/time.png" alt="">11:00
+                  </div>
+                  <div class="localisation" id="loc2">
+                    <img src="./img/place.png" alt="">Parc des Buttes-Chaumont</div>
+                  <div class="inscription">
+                    <img src="./img/form.png" alt="">S'inscrire</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="event">
+              <div class="div event-left">
+                <div class="event-date">
+                  <div class="date">03</div>
+                  <div class="month">Janvier</div>
+                 </div>
+              </div>
+              <div class="event-content">
+                <h2 class="event-title">Conférence : Numérique & Écologie</h2>
+                <div class="event-descr">Découvrez l’impact environnemental de nos outils digitaux</div>
+                <div class="event-details">
+                  <div class="event-time">
+                    <img src="./img/time.png" alt="">14:00
+                  </div>
+                  <div class="localisation"  id="loc3">
+                    <img src="./img/place.png" alt="">Médiathèque du 13ème</div>
+                  <div class="inscription">
+                    <img src="./img/form.png" alt="">S'inscrire</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="event">
+              <div class="div event-left">
+                <div class="event-date">
+                  <div class="date">7</div>
+                  <div class="month">Janvier</div>
+                 </div>
+              </div>
+              <div class="event-content">
+                <h2 class="event-title">Projection-Débat : "Demain"</h2>
+                <div class="event-descr">Film et débat sur les solutions pour un futur durable.</div>
+                <div class="event-details">
+                  <div class="event-time">
+                    <img src="./img/time.png" alt="">11:30
+                  </div>
+                  <div class="localisation" id="loc4">
+                    <img src="./img/place.png" alt="">Cinéma Le Champo</div>
+                  <div class="inscription">
+                    <img src="./img/form.png" alt="">S'inscrire</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="event">
+              <div class="div event-left">
+                <div class="event-date">
+                  <div class="date">18</div>
+                  <div class="month">Janvier</div>
+                 </div>
+              </div>
+              <div class="event-content">
+                <h2 class="event-title">Atelier "Compostage Urbain"</h2>
+                <div class="event-descr">Apprenez à composter vos déchets organiques en ville.</div>
+                <div class="event-details">
+                  <div class="event-time">
+                    <img src="./img/time.png" alt="">15:00
+                  </div>
+                  <div class="localisation" id="loc5">
+                    <img src="./img/place.png" alt="">Jardin partagé du 20ème</div>
+                  <div class="inscription">
+                    <img src="./img/form.png" alt="">S'inscrire</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal-container-map">
+              <div class="modal-map">
+                <span class="close">&times;</span>
+                <iframe class="map" scr="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="modal-container-form">
+              <div class="modal-form">
+                <span class="close-form">&times;</span>
+                <form action="" class="form">
+                  <label for="event-pref">Quel événement? &nbsp &nbsp
+                    <select id="event-pref" name="event-pref">
+                      <option value="">(choisir)</option>
+                      <option value="1">Atelier DIY 20/12 10h</option>
+                      <option value="2">Collecte 21/12 11H-h</option>
+                      <option value="3">Conférence 3/01 14h</option>
+                      <option value="4">Projection 7/01 11h30</option>
+                      <option value="5">Atelier 18/01 15h00</option>
+                    </select>
+                  </label>
+                  <label for="name">Nom</label>
+                  <input type="text" placeholder="Doe" id="name" required>
+                  <label for="firstname">Prénom</label>
+                  <input type="text" placeholder="Jane" id="firstname" required>
+                  <label for="email">Email: </label>
+                  <input id="email" name="email" type="email" placeholder="JaneDoe@email.com" required />
+                  <input type="submit" value="Submit" id="submit" />
+                </form>
+              </div>
+            </div>
+
+            </div>
+        </main>
+
+        <script src="./js/script-event.js"></script>
+     </body>
+</html>
