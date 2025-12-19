@@ -2,6 +2,7 @@
 
 @import url('actions.css');
 @import url('evenements.css');
+@import url('contact.css');
 
 * {
   box-sizing: border-box;
@@ -20,6 +21,7 @@ body {
   --primary-color: #1f3c0f;
   --secondary-color: #232b24;
   --tertiary-color: #E0F0D8;
+  --hover-color: #479d49;
 }
 
 html, body {
@@ -42,7 +44,6 @@ p {
 }
 main {
   margin-left: 200px; /* Largeur du menu de navigation */
-  height: 100vh;
   overflow-y: auto; /* Permet le défilement vertical */
   background-image: linear-gradient(rgb(238, 239, 237),rgb(243, 249, 251)), url(../img/bck_green.jpg);
   background-blend-mode: darken;
@@ -52,10 +53,9 @@ main {
   /* background-attachment: fixed;  */
 }
 body{
-  position: relative;
-  margin: 0px;
-  /* background-image: linear-gradient(rgba(13, 13, 13, 0.537),rgba(18, 29, 15, 0.813)), url(../img/pic_green.jpg); */
-
+  height: 100vh;
+  margin: 0;
+  overflow:scroll;
 }
 nav {
   float: left;
@@ -101,6 +101,9 @@ nav ul li a:hover{
 }
 section{
   margin-bottom: 80px;
+}
+section p {
+  color: var(--secondary-color)
 }
 
 
@@ -158,4 +161,72 @@ section{
 .card-wrapper .swiper-button-prev,
 .card-wrapper .swiper-button-next {
   color: var(--primary-color);
+}
+
+
+/* ? FOOTER */
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+footer .footer-section {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+}
+footer h4 {
+  margin-bottom: 8px;
+}
+
+.footer-section a, p, li {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+.footer-section h4 {
+  color: var(--tertiary-color);
+}
+footer a {
+  font-family: var(--text-font);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .social-icons {
+  font-size: 30px;
+  color: var(--tertiary-color);
+}
+.footer-section button {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.footer-section button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.footer-section .social-icons i:hoover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+.footer-updown {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-updown em{
+  font-size: 14px;
 }

@@ -13,6 +13,13 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.card p{
+  color: var(--secondary-color);
+}
+.card h2, h3, h4{
+  color: var(--primary-color);
+}
+
 .illu-actions{
   display: flex;
   gap: 10px;

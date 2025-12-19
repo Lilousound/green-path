@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""GreenPath" – Association Écologique Locale">
+    <title>"GreenPath" – Association Écologique Locale</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  	<body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="actions.html">Nos Actions</a></li>
+              <li><a href="evenements.html">Évènements</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+
+          <div class="contact-container">
+            <div class="infos">
+              <img src="./img/logo.png" alt="Logo GreenPath">
+             <p> Adresse : 12 Rue de la Nature, 75015 Paris <br>
+              Horaires : Lundi-Vendredi, 9h-18h <br>
+              Email : contact@greenpath.asso.fr <br>
+              Téléphone : 01 23 45 67 89</p>
+              <div class="socials">
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-mastodon-fill"></i>
+              </div>
+            </div>
+
+
+            <form class="contact-form" action="" method="post">
+              <h2>Contactez-nous</h2>
+
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject" required>
+                  <option value="">-- Sélectionnez un sujet --</option>
+                  <option value="information">Demande d'information</option>
+                  <option value="proposal">Proposez une conférence ou un atelier</option>
+                  <option value="atelier">Au sujet des ateliers</option>
+                  <option value="autre">Autre</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <input type="submit" value="Envoyer" id="submit-btn" />
+            </form>
+
+
+
+
+          </div>
+
+
+        </main>
+
+        <script src="./js/script-contact.js"></script>
+     </body>
+</html>
