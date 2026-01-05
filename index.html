@@ -20,7 +20,7 @@
   </head>
   	<body>
         <header>
-          <nav>
+          <nav id="nav">
             <ul>
               <li><a href="index.html" class="hover-underline">Accueil</a></li>
               <li><a href="actions.html" class="hover-underline">Nos Actions</a></li>
@@ -28,21 +28,26 @@
               <li><a href="contact.html" class="hover-underline">Contact</a></li>
             </ul>
           </nav>
+
         </header>
 
         <main>
+          <div id="burger-menu">
+            <h1>☰</h1>
+          </div>
+
           <div class="title">
             <img src="./img/logo.png" alt="Logo GreenPath">
             <div class="title-text">
               <h1>Agissons ensemble pour un Paris plus vert!</h1><br>
               <h2>GreenPath est une association engagée pour la transition écologique
-              en Île-de-France. Rejoignez-nous pour des actions concrètes et conviviales !</h2>
+              en Île-de-France. Rejoignez-nous pour des actions concrètes et conviviales!</h2>
             </div>
           </div>
 
 
 
-          <section>
+          <section id="actions-carousel">
             <h2  id="actions">Nos Actions:</h2>
 
             <div class="carousel swiper">
@@ -132,5 +137,6 @@
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script src="./js/script.js"></script>
+        <script src="./js/script-menu.js"></script>
      </body>
 </html>

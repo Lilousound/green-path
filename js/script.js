@@ -18,11 +18,3 @@ const swiper = new Swiper('.card-wrapper', {
     el: '.swiper-scrollbar',
   },
 });
-
-
-const submitEmail = document.getElementById('submit-email');
-submitEmail.addEventListener('click', (e) => {
-  e.preventDefault();
-  alert('Inscription à la newsletter réussie ! Merci pour votre engagement.');
-  modalForm.style.display = 'none';
-});
