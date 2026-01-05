@@ -61,10 +61,10 @@ nav {
   float: left;
   width: 200px;
   height: 100vh;
-  padding: 30px 0 0 40px;
+  padding: 40px 0 0 30px;
   background-color: var(--primary-color);
   position: fixed;
-  line-height: 40px;
+  line-height: 60px;
   font-weight: bold;
 }
 nav ul{
@@ -74,15 +74,35 @@ nav ul{
 nav ul li{
   margin-bottom: 10px;
   list-style-type: none;
-
 }
 nav ul li a{
   font-family: var(--main-font);
   color: white;
+  font-size: 1.4rem;
   text-decoration: none;
 }
-nav ul li a:hover{
-  text-decoration: underline;
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+.hover-underline::after, .hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(to right, var(--tertiary-color), var(--hover-color));
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+.hover-underline:hover::after, .hover-underline:hover::before {
+  transform: scaleX(1);
 }
 #actions{
   margin: 50px 0 20px 180px;
@@ -198,11 +218,15 @@ footer a {
   font-family: var(--text-font);
 }
 footer a:hover {
-  text-decoration: underline;
+  color: var(--hover-color);
 }
 footer .social-icons {
   font-size: 30px;
   color: var(--tertiary-color);
+}
+footer i:hover {
+  color: var(--hover-color);
+  cursor: pointer;
 }
 .footer-section button {
   background-color: var(--primary-color);
