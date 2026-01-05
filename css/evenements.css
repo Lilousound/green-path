@@ -8,7 +8,7 @@
 .event-container .event{
   margin: 10px auto;
   background-color: rgba(255, 255, 255, 0.646);
-  width: 60%;
+  width: 65%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
