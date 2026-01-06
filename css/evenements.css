@@ -125,7 +125,6 @@
 .localisation:hover, .inscription:hover {
   cursor: pointer;
 }
-
 .modal-container-form {
   display: none;
   position: fixed;

@@ -19,7 +19,6 @@
 .card h2, h3, h4{
   color: var(--primary-color);
 }
-
 .illu-actions{
   display: flex;
   gap: 10px;

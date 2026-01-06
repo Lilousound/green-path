@@ -8,13 +8,11 @@
   box-sizing: border-box;
   margin: 0;
 }
-
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
 }
-
 :root{
   --main-font: 'Montserrat Alternates', 'Arial, sans-serif';
   --text-font: 'Gabarito', 'Arial, sans-serif';
@@ -23,11 +21,9 @@ body {
   --tertiary-color: #E0F0D8;
   --hover-color: #479d49;
 }
-
 html, body {
   height: 100%;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--main-font);
   color: var(--primary-color);
@@ -141,8 +137,7 @@ section p {
 }
 
 
-
-/* ! CAROUSEL STYLES */
+/* * CAROUSEL STYLES */
 
 .carousel {
   width: 100%;
@@ -270,7 +265,6 @@ footer i:hover {
 }
 
 
-
 /* ! MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .event-container .event{
@@ -322,19 +316,24 @@ footer i:hover {
     margin: auto;
   }
   .title img{
-    width: 200px;
+    width: 300px;
     height: auto;
   }
   .card-list .card-item .card-link{
     width: 500px;
     margin: 0 0 0 80px;
   }
-
+  .modal-map{
+  width: 85%;
+  }
 }
 @media screen and  (max-width: 880px) {
   .card-list .card-item .card-link{
     width: 450px;
     margin: 0 0 0 30px;
+  }
+  .modal-form{
+    width: 85%;
   }
 }
 @media screen and  (max-width: 720px) {
